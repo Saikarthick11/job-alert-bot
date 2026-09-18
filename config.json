@@ -1,0 +1,60 @@
+{
+  "_note": "Company/slug lists below are STARTER guesses where noted — verify before relying on them (see README 'Adding companies'). A wrong token just gets skipped with a warning, it won't break anything else.",
+
+  "keywords": [
+    "software engineer",
+    "devops",
+    "site reliability",
+    "sre",
+    "cloud engineer",
+    "platform engineer",
+    "infrastructure engineer"
+  ],
+  "exclude_keywords": [
+    "senior",
+    "staff",
+    "principal",
+    "director",
+    "vp ",
+    "manager"
+  ],
+
+  "_comment_fast_tier": "FAST tier — checked every run (~5 min). Single-employer ATS boards, no documented daily cap.",
+  "greenhouse_companies": ["robinhood", "gitlab", "reddit", "discord", "asana"],
+  "lever_companies": [],
+  "ashby_companies": [],
+  "smartrecruiters_companies": [],
+  "recruitee_companies": [],
+  "workable_companies": [],
+  "use_arbeitnow": true,
+
+  "_comment_moderate_tier": "MODERATE tier — checked 4x/hour (every :00/:15/:30/:45). Shared aggregators, or sources with a real rate cap (Adzuna).",
+  "use_remoteok": true,
+  "workable_search": {
+    "enabled": true,
+    "query": "software engineer OR devops OR cloud engineer OR site reliability",
+    "location": "United States"
+  },
+  "themuse": {
+    "enabled": true,
+    "categories": ["Software Engineering", "IT"]
+  },
+  "use_adzuna": true,
+  "adzuna_country": "us",
+
+  "_comment_slow_tier": "SLOW tier — checked 4x/day (00:00/06:00/12:00/18:00 UTC), matching Remotive's own stated 'no more than ~4 checks/day' terms.",
+  "remotive": {
+    "enabled": true,
+    "query": "software engineer devops cloud"
+  },
+
+  "linkedin": {
+    "_note": "Disabled by default — costs real money via Apify (~$0.002/job). See README before enabling.",
+    "enabled": false,
+    "keywords": "software engineer OR devops engineer OR cloud engineer OR site reliability engineer OR platform engineer",
+    "location": "United States",
+    "datePosted": "past24Hours",
+    "limitPerSource": 15,
+    "maxChargeUsd": 0.10
+  }
+}
