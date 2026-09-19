@@ -33,6 +33,7 @@ from job_poller import (
     load_json,
     save_json,
     matches_keywords,
+    matches_location,
     send_email,
     CONFIG_PATH,
     SEEN_PATH,
@@ -107,6 +108,8 @@ def main():
     new_jobs = []
     for j in raw_jobs:
         if not matches_keywords(j.get("title"), keywords, exclude_keywords):
+            continue
+        if not matches_location(j.get("location"), config.get("require_us_location", True)):
             continue
         if j["id"] in seen:
             continue

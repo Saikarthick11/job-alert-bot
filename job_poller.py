@@ -36,6 +36,7 @@ Greenhouse/Lever).
 
 import os
 import json
+import re
 import smtplib
 import ssl
 from email.mime.multipart import MIMEMultipart
@@ -81,6 +82,50 @@ def matches_keywords(title, keywords, exclude_keywords):
     if exclude_keywords and any(k.lower() in t for k in exclude_keywords):
         return False
     return True
+
+
+US_STATE_ABBR = {
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID",
+    "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS",
+    "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
+    "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV",
+    "WI", "WY", "DC",
+}
+US_INDICATORS = ["united states", "usa", "u.s.a", "u.s."]
+NON_US_INDICATORS = [
+    "india", "canada", "united kingdom", " uk", "uk,", "england", "scotland",
+    "wales", "germany", "france", "spain", "italy", "netherlands", "poland",
+    "portugal", "ireland", "australia", "new zealand", "singapore", "japan",
+    "china", "philippines", "vietnam", "brazil", "mexico", "argentina",
+    "colombia", "romania", "sweden", "denmark", "norway", "finland",
+    "switzerland", "austria", "belgium", "israel", "south africa", "egypt",
+    "nigeria", "pakistan", "bangladesh", "indonesia", "malaysia", "thailand",
+    "korea", "taiwan", "hong kong", "dubai", "uae", "saudi arabia", "turkey",
+    "greece", "ukraine", "russia", "czech", "hungary", "chile", "peru",
+    "costa rica", "panama", "morocco", "kenya",
+]
+
+
+def matches_location(location, require_us=True):
+    """True if the posting looks US-based (or location is blank/ambiguous).
+    Blank locations are let through deliberately — some ATS boards leave
+    this field empty for genuinely US roles, and rejecting them loses real
+    matches. Set require_us=False in config.json to disable this entirely."""
+    if not require_us:
+        return True
+    loc = (location or "").lower().strip()
+    if not loc:
+        return True
+    if any(term in loc for term in NON_US_INDICATORS):
+        return False
+    if any(term in loc for term in US_INDICATORS):
+        return True
+    tokens = re.split(r"[,\s/()\-]+", loc.upper())
+    if any(tok in US_STATE_ABBR for tok in tokens):
+        return True
+    if loc == "remote" or loc.startswith("remote"):
+        return True  # bare "Remote" with no country named, and no foreign term matched above
+    return False
 
 
 def safe_fetch(name, fn, *args):
@@ -451,6 +496,8 @@ def main():
     now = now_utc.isoformat()
     for j in all_jobs:
         if not matches_keywords(j.get("title"), keywords, exclude_keywords):
+            continue
+        if not matches_location(j.get("location"), config.get("require_us_location", True)):
             continue
         if j["id"] in seen:
             continue

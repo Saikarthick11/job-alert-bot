@@ -3,12 +3,8 @@
 
   "keywords": [
     "software engineer",
-    "devops",
-    "site reliability",
-    "sre",
-    "cloud engineer",
-    "platform engineer",
-    "infrastructure engineer"
+    "devops engineer",
+    "cloud engineer"
   ],
   "exclude_keywords": [
     "senior",
@@ -18,6 +14,7 @@
     "vp ",
     "manager"
   ],
+  "require_us_location": true,
 
   "_comment_fast_tier": "FAST tier — checked every run (~5 min). Single-employer ATS boards, no documented daily cap.",
   "greenhouse_companies": ["robinhood", "gitlab", "reddit", "discord", "asana"],
@@ -32,7 +29,7 @@
   "use_remoteok": true,
   "workable_search": {
     "enabled": true,
-    "query": "software engineer OR devops OR cloud engineer OR site reliability",
+    "query": "software engineer OR devops engineer OR cloud engineer",
     "location": "United States"
   },
   "themuse": {
@@ -51,7 +48,7 @@
   "linkedin": {
     "_note": "Disabled by default — costs real money via Apify (~$0.002/job). See README before enabling.",
     "enabled": false,
-    "keywords": "software engineer OR devops engineer OR cloud engineer OR site reliability engineer OR platform engineer",
+    "keywords": "software engineer OR devops engineer OR cloud engineer",
     "location": "United States",
     "datePosted": "past24Hours",
     "limitPerSource": 15,
