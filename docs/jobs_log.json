@@ -1,1 +1,425 @@
-[]
+[
+  {
+    "id": "arbeitnow:azure-infrastructure-engineer-in-koln-buro-koln-181483",
+    "title": "Azure Infrastructure Engineer (m/w/d) in K\u00f6ln",
+    "company": "GR\u00dcNE'S LEIHH\u00c4USER GmbH & Co. KG",
+    "location": "B\u00fcro K\u00f6ln",
+    "url": "https://www.arbeitnow.com/jobs/companies/grunes-leihhauser-gmbh-co-kg/azure-infrastructure-engineer-in-koln-buro-koln-181483",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T11:16:38.832495+00:00"
+  },
+  {
+    "id": "arbeitnow:azure-infrastructure-engineer-in-frankfurt-buro-frankfurt-83901",
+    "title": "Azure Infrastructure Engineer (m/w/d) in Frankfurt",
+    "company": "GR\u00dcNE'S LEIHH\u00c4USER GmbH & Co. KG",
+    "location": "B\u00fcro Frankfurt",
+    "url": "https://www.arbeitnow.com/jobs/companies/grunes-leihhauser-gmbh-co-kg/azure-infrastructure-engineer-in-frankfurt-buro-frankfurt-83901",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T11:16:38.832495+00:00"
+  },
+  {
+    "id": "arbeitnow:cloud-engineer-heidelberg-282008",
+    "title": "Cloud Engineer (m/w/d)",
+    "company": "Rewire",
+    "location": "Heidelberg, Baden-W\u00fcrttemberg, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/rewire/cloud-engineer-heidelberg-282008",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T11:16:38.832495+00:00"
+  },
+  {
+    "id": "arbeitnow:sr-software-engineer-cloud-platform-united-kingdom-372540",
+    "title": "Sr. Software Engineer, Cloud Platform",
+    "company": "Samsara",
+    "location": "United Kingdom",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/samsara/sr-software-engineer-cloud-platform-united-kingdom-372540",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T11:16:38.832495+00:00"
+  },
+  {
+    "id": "arbeitnow:sr-software-engineer-cloud-platform-london-432039",
+    "title": "Sr. Software Engineer, Cloud Platform",
+    "company": "Samsara",
+    "location": "London, London, United Kingdom",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/samsara/sr-software-engineer-cloud-platform-london-432039",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T11:16:38.832495+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-simulation-platform-munich-424378",
+    "title": "Software Engineer - Simulation Platform",
+    "company": "Proxima Fusion GmbH",
+    "location": "Munich",
+    "url": "https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/software-engineer-simulation-platform-munich-424378",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T06:25:50.445968+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-future-hiring-west-midlands-england-142258",
+    "title": "Software Engineer (Future Hiring)",
+    "company": "SugarCRM",
+    "location": "West Midlands, England",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/sugarcrm/software-engineer-future-hiring-west-midlands-england-142258",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-19T06:25:50.445968+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8214910",
+    "title": "Software Engineer, Ingestion Platform",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8214910",
+    "source": "Greenhouse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1137387",
+    "title": "Software Engineer",
+    "company": "Mirantis",
+    "location": "Remote",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-mirantis-1137387",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1136570",
+    "title": "Software Engineer III Mobile",
+    "company": "Stone",
+    "location": "Remoto",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-iii-mobile-stone-1136570",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1136569",
+    "title": "Software Engineer II Golang",
+    "company": "Stone",
+    "location": "Remoto",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ii-golang-stone-1136569",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1135634",
+    "title": "Software Engineer GO",
+    "company": "Wakacje.pl",
+    "location": "Remote",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-go-wakacje-pl-1135634",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22039277",
+    "title": "Sr Software Engineer, MLE - AV Labs",
+    "company": "Uber",
+    "location": "Sunnyvale, CA",
+    "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-mle-av-labs",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:21502103",
+    "title": "Sr. Simulation Software Engineer (Application Software)",
+    "company": "SpaceX",
+    "location": "El Segundo, CA",
+    "url": "https://www.themuse.com/jobs/spacex/sr-simulation-software-engineer-application-software",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22010317",
+    "title": "Middle Full-Stack Software Engineer (.NET)",
+    "company": "Exadel",
+    "location": "Dabas, Hungary, Kazanlak, Bulgaria, Ozork\u00f3w, Poland",
+    "url": "https://www.themuse.com/jobs/exadel/middle-fullstack-software-engineer-net",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22180820",
+    "title": "Software Engineer II - Engineer",
+    "company": "Uber",
+    "location": "San Francisco, CA",
+    "url": "https://www.themuse.com/jobs/uber/software-engineer-ii-engineer-4c0e8f",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8008723",
+    "title": "Full Stack Software Engineer, Credit Cards & Banking",
+    "company": "robinhood",
+    "location": "Bellevue, WA; Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8008723?t=gh_src=&gh_jid=8008723",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:7263592",
+    "title": "Software Engineer, Backend",
+    "company": "robinhood",
+    "location": "Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&gh_jid=7263592",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8142961",
+    "title": "Software Engineering Intern, Android (Summer 2027)",
+    "company": "robinhood",
+    "location": "Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8142961?t=gh_src=&gh_jid=8142961",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8123225",
+    "title": "Software Engineering Intern, Backend (Summer 2027)",
+    "company": "robinhood",
+    "location": "Bellevue, WA; Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8123225?t=gh_src=&gh_jid=8123225",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8142959",
+    "title": "Software Engineering Intern, iOS (Summer 2027)",
+    "company": "robinhood",
+    "location": "Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8142959?t=gh_src=&gh_jid=8142959",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8142963",
+    "title": "Software Engineering Intern, Web (Summer 2027)",
+    "company": "robinhood",
+    "location": "Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8142963?t=gh_src=&gh_jid=8142963",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8189005",
+    "title": "Software Engineer, Tokenization",
+    "company": "robinhood",
+    "location": "Menlo Park, CA; New York, NY",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8189005?t=gh_src=&gh_jid=8189005",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:robinhood:8189007",
+    "title": "Software Engineer, Tokenization",
+    "company": "robinhood",
+    "location": "Toronto, Canada",
+    "url": "https://boards.greenhouse.io/robinhood/jobs/8189007?t=gh_src=&gh_jid=8189007",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:gitlab:8688078002",
+    "title": "Intermediate Software Engineer, Security Factory: Vulnerability Management ",
+    "company": "gitlab",
+    "location": "Remote, Canada; Remote, Israel; Remote, United Kingdom",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8688078002",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8148431",
+    "title": "Backend Software Engineer, PDP Experience",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8148431",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8147559",
+    "title": "Front End Software Engineer, Consumer Engineering",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8147559",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8198102",
+    "title": "Front End Software Engineer, Media Player",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8198102",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:6469397",
+    "title": "Software Engineer, Ads",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/6469397",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:6512458",
+    "title": "Software Engineer, Ads",
+    "company": "reddit",
+    "location": "Remote - Ontario, Canada",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/6512458",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8172457",
+    "title": "Software Engineer, Consumer Engineering",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8172457",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:reddit:8139781",
+    "title": "Software Engineer, Content Platform",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8139781",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:discord:8703614002",
+    "title": "QA/DevOps Engineer",
+    "company": "discord",
+    "location": "San Francisco Bay Area",
+    "url": "https://job-boards.greenhouse.io/discord/jobs/8703614002",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:discord:8806163002",
+    "title": "Software Engineer, Distributed Systems",
+    "company": "discord",
+    "location": "San Francisco Bay Area",
+    "url": "https://job-boards.greenhouse.io/discord/jobs/8806163002",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:discord:8642213002",
+    "title": "Software Engineer, Notifications",
+    "company": "discord",
+    "location": "San Francisco Bay Area",
+    "url": "https://job-boards.greenhouse.io/discord/jobs/8642213002",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:asana:7964297",
+    "title": "Backend Software Engineer",
+    "company": "asana",
+    "location": "Reykjav\u00edk",
+    "url": "https://www.asana.com/jobs/apply/7964297?gh_jid=7964297",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:asana:7961475",
+    "title": "Software Engineer",
+    "company": "asana",
+    "location": "New York City",
+    "url": "https://www.asana.com/jobs/apply/7961475?gh_jid=7961475",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:asana:8140029",
+    "title": "Software Engineer, Development Infrastructure",
+    "company": "asana",
+    "location": "Reykjav\u00edk",
+    "url": "https://www.asana.com/jobs/apply/8140029?gh_jid=8140029",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "greenhouse:asana:7961454",
+    "title": "Software Engineer, Product",
+    "company": "asana",
+    "location": "Vancouver, BC",
+    "url": "https://www.asana.com/jobs/apply/7961454?gh_jid=7961454",
+    "source": "Greenhouse",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-ii-kassel-hesse-311769",
+    "title": "Software Engineer II",
+    "company": "Axon",
+    "location": "Kassel, Hesse",
+    "url": "https://www.arbeitnow.com/jobs/companies/axon/software-engineer-ii-kassel-hesse-311769",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:data-platform-engineer-berlin-253234",
+    "title": "Data Platform Engineer (m/w/d)",
+    "company": "ANGEHEUERT GmbH",
+    "location": "Berlin, Berlin, Deutschland",
+    "url": "https://www.arbeitnow.com/jobs/companies/angeheuert-gmbh/data-platform-engineer-berlin-253234",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-platform-bristol-united-kingdom-91055",
+    "title": "Software Engineer, Platform - Bristol, United Kingdom",
+    "company": "speechify",
+    "location": "Bristol",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/speechify/software-engineer-platform-bristol-united-kingdom-91055",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-platform-brighton-united-kingdom-419516",
+    "title": "Software Engineer, Platform - Brighton, United Kingdom",
+    "company": "speechify",
+    "location": "Brighton",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/speechify/software-engineer-platform-brighton-united-kingdom-419516",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:mathematical-software-engineer-glasgow-11229",
+    "title": "Mathematical Software Engineer",
+    "company": "Spire",
+    "location": "Glasgow, Scotland, United Kingdom",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/spire/mathematical-software-engineer-glasgow-11229",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:software-engineer-9-month-ftc-london-372405",
+    "title": "Software Engineer, 9 month FTC",
+    "company": "Unmind",
+    "location": "London, HQ",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/unmind/software-engineer-9-month-ftc-london-372405",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:data-platform-engineer-paris-202815",
+    "title": "Data Platform Engineer",
+    "company": "Qonto",
+    "location": "Paris",
+    "url": "https://www.arbeitnow.fr/jobs/companies/qonto/data-platform-engineer-paris-202815",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  },
+  {
+    "id": "arbeitnow:site-reliability-engineer-ai-platform-paris-473214",
+    "title": "Site Reliability Engineer, AI Platform",
+    "company": "Algolia",
+    "location": "Paris",
+    "url": "https://www.arbeitnow.fr/jobs/companies/algolia/site-reliability-engineer-ai-platform-paris-473214",
+    "source": "Arbeitnow",
+    "found_at": "2026-09-18T23:34:29.479760+00:00"
+  }
+]
