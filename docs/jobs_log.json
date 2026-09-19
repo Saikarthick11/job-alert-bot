@@ -1,5 +1,86 @@
 [
   {
+    "id": "greenhouse:reddit:8214910",
+    "title": "Software Engineer, Ingestion Platform",
+    "company": "reddit",
+    "location": "Remote - United States",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/8214910",
+    "source": "Greenhouse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1137387",
+    "title": "Software Engineer",
+    "company": "Mirantis",
+    "location": "Remote",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-mirantis-1137387",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1136570",
+    "title": "Software Engineer III Mobile",
+    "company": "Stone",
+    "location": "Remoto",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-iii-mobile-stone-1136570",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1136569",
+    "title": "Software Engineer II Golang",
+    "company": "Stone",
+    "location": "Remoto",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ii-golang-stone-1136569",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "remoteok:1135634",
+    "title": "Software Engineer GO",
+    "company": "Wakacje.pl",
+    "location": "Remote",
+    "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-go-wakacje-pl-1135634",
+    "source": "RemoteOK",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22039277",
+    "title": "Sr Software Engineer, MLE - AV Labs",
+    "company": "Uber",
+    "location": "Sunnyvale, CA",
+    "url": "https://www.themuse.com/jobs/uber/sr-software-engineer-mle-av-labs",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:21502103",
+    "title": "Sr. Simulation Software Engineer (Application Software)",
+    "company": "SpaceX",
+    "location": "El Segundo, CA",
+    "url": "https://www.themuse.com/jobs/spacex/sr-simulation-software-engineer-application-software",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22010317",
+    "title": "Middle Full-Stack Software Engineer (.NET)",
+    "company": "Exadel",
+    "location": "Dabas, Hungary, Kazanlak, Bulgaria, Ozork\u00f3w, Poland",
+    "url": "https://www.themuse.com/jobs/exadel/middle-fullstack-software-engineer-net",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
+    "id": "themuse:22180820",
+    "title": "Software Engineer II - Engineer",
+    "company": "Uber",
+    "location": "San Francisco, CA",
+    "url": "https://www.themuse.com/jobs/uber/software-engineer-ii-engineer-4c0e8f",
+    "source": "The Muse",
+    "found_at": "2026-09-19T01:30:39.773580+00:00"
+  },
+  {
     "id": "greenhouse:robinhood:8008723",
     "title": "Full Stack Software Engineer, Credit Cards & Banking",
     "company": "robinhood",
