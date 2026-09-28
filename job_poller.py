@@ -93,7 +93,7 @@ US_STATE_ABBR = {
 }
 US_INDICATORS = ["united states", "usa", "u.s.a", "u.s."]
 NON_US_INDICATORS = [
-    "india", "canada", "united kingdom", " uk", "uk,", "england", "scotland",
+    "india", "canada", "united kingdom", "uk", "england", "scotland",
     "wales", "germany", "france", "spain", "italy", "netherlands", "poland",
     "portugal", "ireland", "australia", "new zealand", "singapore", "japan",
     "china", "philippines", "vietnam", "brazil", "mexico", "argentina",
@@ -104,6 +104,61 @@ NON_US_INDICATORS = [
     "greece", "ukraine", "russia", "czech", "hungary", "chile", "peru",
     "costa rica", "panama", "morocco", "kenya",
 ]
+
+# 2-letter US state abbreviations are ALSO valid ISO country codes for these
+# 19 countries (DE=Germany/Delaware, IN=India/Indiana, CA=Canada/California,
+# etc). A bare code match is genuinely ambiguous, so instead of trusting the
+# code alone, require a real US city name for that specific state to show up
+# too — this is how US postings actually format location ("San Francisco,
+# CA"), so it doesn't lose real matches, but "Berlin, DE" no longer passes
+# just because DE happens to also mean Delaware.
+AMBIGUOUS_STATE_CODES = {
+    "CA": ["san francisco", "los angeles", "san jose", "san diego", "sacramento",
+           "oakland", "palo alto", "mountain view", "santa clara", "sunnyvale",
+           "irvine", "fremont", "berkeley", "pasadena", "long beach", "anaheim",
+           "santa monica", "redwood city", "cupertino", "menlo park", "san mateo",
+           "burbank", "glendale", "bay area", "silicon valley", "california"],
+    "DE": ["wilmington", "dover", "delaware"],
+    "IN": ["indianapolis", "fort wayne", "bloomington", "indiana"],
+    "PA": ["philadelphia", "pittsburgh", "harrisburg", "allentown", "pennsylvania"],
+    "MA": ["boston", "cambridge", "worcester", "somerville", "massachusetts"],
+    "GA": ["atlanta", "savannah", "augusta", "georgia"],
+    "AR": ["little rock", "fayetteville", "arkansas"],
+    "CO": ["denver", "boulder", "colorado springs", "fort collins", "colorado"],
+    "MT": ["billings", "missoula", "bozeman", "montana"],
+    "LA": ["new orleans", "baton rouge", "louisiana"],
+    "IL": ["chicago", "naperville", "illinois"],
+    "ID": ["boise", "idaho"],
+    "AL": ["birmingham, al", "huntsville", "montgomery, al", "alabama"],
+    "MD": ["baltimore", "annapolis", "rockville", "bethesda", "maryland"],
+    "MO": ["st. louis", "st louis", "kansas city, mo", "missouri"],
+    "SD": ["sioux falls", "south dakota"],
+    "SC": ["south carolina", "charleston, sc", "greenville, sc"],
+    "MN": ["minneapolis", "st. paul", "saint paul", "minnesota"],
+    "NE": ["omaha", "lincoln, ne", "nebraska"],
+}
+GEORGIA_CITY_HINTS = ["atlanta", "savannah", "augusta", "marietta"]
+
+US_STATE_FULL_NAMES = {
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "hawaii", "idaho", "illinois",
+    "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine",
+    "maryland", "massachusetts", "michigan", "minnesota", "mississippi",
+    "missouri", "montana", "nebraska", "nevada", "new hampshire",
+    "new jersey", "new mexico", "new york", "north carolina", "north dakota",
+    "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+    "south carolina", "south dakota", "tennessee", "texas", "utah",
+    "vermont", "virginia", "washington", "west virginia", "wisconsin",
+    "wyoming", "district of columbia",
+    # deliberately excludes "georgia" — see GEORGIA_CITY_HINTS, since that
+    # name is identical to the country and needs its own disambiguation
+}
+
+
+def _has_term(text, term):
+    """Whole-word/phrase match, not naive substring — 'india' must not match
+    inside 'Indianapolis', 'china' must not match inside some longer word."""
+    return re.search(r"\b" + re.escape(term) + r"\b", text) is not None
 
 
 def matches_location(location, require_us=True):
@@ -116,13 +171,26 @@ def matches_location(location, require_us=True):
     loc = (location or "").lower().strip()
     if not loc:
         return True
-    if any(term in loc for term in NON_US_INDICATORS):
+    if any(_has_term(loc, term) for term in NON_US_INDICATORS):
         return False
-    if any(term in loc for term in US_INDICATORS):
+    if any(_has_term(loc, term) for term in US_INDICATORS):
         return True
+
     tokens = re.split(r"[,\s/()\-]+", loc.upper())
-    if any(tok in US_STATE_ABBR for tok in tokens):
+    for tok in tokens:
+        if tok in AMBIGUOUS_STATE_CODES:
+            if any(_has_term(loc, hint) for hint in AMBIGUOUS_STATE_CODES[tok]):
+                return True
+            continue  # ambiguous code, no US city to back it up — keep looking
+        if tok in US_STATE_ABBR:
+            return True
+
+    if _has_term(loc, "georgia"):
+        if any(_has_term(loc, hint) for hint in GEORGIA_CITY_HINTS):
+            return True
+    elif any(_has_term(loc, name) for name in US_STATE_FULL_NAMES):
         return True
+
     if loc == "remote" or loc.startswith("remote"):
         return True  # bare "Remote" with no country named, and no foreign term matched above
     return False
